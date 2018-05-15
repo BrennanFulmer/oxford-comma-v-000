@@ -4,5 +4,6 @@ def oxford_comma(array)
   elsif array.size() == 2
     "#{array[0]} and #{array[1]}"
   elsif array.size() == 3
+    
   end
 end
