@@ -6,6 +6,6 @@ def oxford_comma(array)
   elsif array.size() == 3
     "#{array[0]}, #{array[1]}, and #{array[2]}"
   else
-    
+    list = ""
   end
 end
