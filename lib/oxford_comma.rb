@@ -1,6 +1,6 @@
 def oxford_comma(array)
   sized = array.size()
-  if sized == 1
+  if sized === 1
     array.join()
   elsif sized == 2
     "#{array[0]} and #{array[1]}"
