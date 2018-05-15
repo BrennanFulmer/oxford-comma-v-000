@@ -1,13 +1,17 @@
 def oxford_comma(array)
   sized = array.size()
-  if sized === 1
-    array.join()
-  elsif sized === 2
-    "#{array[0]} and #{array[1]}"
-  elsif sized === 3
-    "#{array[0]}, #{array[1]}, and #{array[2]}"
-  else
-    list = ""
-    
+  step = 0
+  while step < sized
+    if step === 0
+      list = "#{array[step]}"
+    elsif step === 1 && sized === 2
+      list << " and #{array[step]}"
+    elsif step === sized - 1
+      list << ", and #{array[step]}"
+    else
+      list << ", #{array[step]}"
+    end
+    step += 1
   end
+  list
 end
